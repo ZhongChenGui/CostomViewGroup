@@ -11,4 +11,13 @@
         <attr name="textMaxLength" format="integer" />
     </declare-styleable>
 
+    <declare-styleable name="KeyboardView">
+        <attr name="numberColor" format="color" />
+        <attr name="numberSize" format="dimension" />
+        <attr name="itemMargin" format="dimension" />
+        <attr name="itemPressBg" format="color" />
+        <attr name="itemNormalBg" format="color" />
+
+    </declare-styleable>
+
 </resources>

@@ -163,6 +163,9 @@ public class FlowLayout extends ViewGroup {
     @Override
     protected void onLayout(boolean b, int i, int i1, int i2, int i3) {
         // 摆放
+        if (mLines.size() <= 0) {
+            return;
+        }
         View firstChild = mLines.get(0).get(0);
         int currentLeft = mItemHorizontalMargin + getPaddingLeft();
         int currentTop = (int) mItemVerticalMargin + getPaddingTop();

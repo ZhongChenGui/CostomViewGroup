@@ -7,6 +7,12 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <com.learning.costomviewgroup.keyboard.KeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="600px"
+        android:padding="20px"
+        android:layout_height="800px"
+        />
     <com.learning.costomviewgroup.flow.FlowLayout
         android:id="@+id/flow_layout"
         android:layout_width="match_parent"
