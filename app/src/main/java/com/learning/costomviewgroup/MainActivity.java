@@ -23,7 +23,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 //        useFlowLayout();
-        useKeyboard();
+//        useKeyboard();
+        useSlideView();
+
+    }
+
+    private void useSlideView() {
 
     }
 
