@@ -7,17 +7,33 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <com.learning.costomviewgroup.slide.SlideMenuView
+        android:id="@+id/slide_item"
+        android:background="#8822ab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="群通知"
+            android:textColor="#ff0000"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_height="300px"/>
+
+    </com.learning.costomviewgroup.slide.SlideMenuView>
+
     <com.learning.costomviewgroup.keyboard.KeyboardView
         android:id="@+id/keyboard_view"
         android:layout_width="600px"
-        android:padding="20px"
         android:layout_height="800px"
-        />
+        android:padding="20px" />
+
     <com.learning.costomviewgroup.flow.FlowLayout
         android:id="@+id/flow_layout"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:padding="20dp"
-        app:textMaxLength="10"
-        android:layout_height="match_parent" />
+        app:textMaxLength="10" />
 
 </LinearLayout>
