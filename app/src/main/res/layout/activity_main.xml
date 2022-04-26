@@ -8,6 +8,8 @@
     tools:context=".MainActivity">
 
     <com.learning.costomviewgroup.slide.SlideMenuView
+        android:id="@+id/slide_item"
+        android:background="#8822ab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 

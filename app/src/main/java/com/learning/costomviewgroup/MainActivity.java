@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.learning.costomviewgroup.flow.FlowLayout;
 import com.learning.costomviewgroup.keyboard.KeyboardView;
+import com.learning.costomviewgroup.slide.SlideMenuView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private FlowLayout mFlowLayout;
     private KeyboardView mKeyboardView;
+    private SlideMenuView mSlideItemView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +31,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void useSlideView() {
+        mSlideItemView = this.findViewById(R.id.slide_item);
+        mSlideItemView.setOnEditClickListener(new SlideMenuView.OnEditClickListener() {
+            @Override
+            public void onReadClick() {
+                Log.d(TAG, "onReadClick: ..........mSlideItemView.isOpen(); ........." + mSlideItemView.isOpen());
 
+            }
+
+            @Override
+            public void onTopClick() {
+                Log.d(TAG, "onTopClick: ..........................");
+            }
+
+            @Override
+            public void onDeleteClick() {
+                Log.d(TAG, "onDeleteClick: ...........................");
+            }
+        });
     }
 
     private void useKeyboard() {
